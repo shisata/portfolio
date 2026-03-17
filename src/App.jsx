@@ -2,20 +2,28 @@ import { Navbar } from "./layout/navBar"
 import { Routes, Route } from "react-router"
 import { Home } from "./pages/Home/Home"
 import { About } from "./pages/About/About"
-import { Experience } from "./pages/Experience/Experience"
-import { Project1 } from "./pages/Experience/Project1/Project1"
+import { Works } from "./pages/Works/Works"
+import { Project1 } from "./pages/Works/Project1/Project1"
+import { Contact } from "./pages/Contact/Contact"
+import { Footer } from "./layout/Footer"
 
 function App() {
   return (
     <>
-    <Routes>
-      <Route index element={<Home/>}/>
-      <Route path="experience">
-        <Route index element={<Experience/>}/>
-        <Route path="project1" element={<Project1/>}/>
-      </Route>
-      <Route path="about" element={<About/>}/>
-    </Routes>
+    {/* <div id="site-container" className="min-h-screen overflow-x-hidden"> */}
+    <div id="site-container" className="h-2000 overflow-x-hidden pt-navbar-height relative">
+      <Navbar/>
+      <Routes>
+        <Route index element={<Home/>}/>
+        <Route path="works">
+          <Route index element={<Works/>}/>
+          <Route path="project1" element={<Project1/>}/>
+        </Route>
+        <Route path="about" element={<About/>}/>
+        <Route path="contact" element={<Contact/>}/>
+      </Routes>
+      <Footer/> 
+    </div>
     </>
   )
 }

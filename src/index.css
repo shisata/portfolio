@@ -1,20 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 @import "tailwindcss";
 
 
+/* Note */
+/* TODO:
+ - Define variabbles: 
+    - Default backgroun}d color light/dark 
+    - Default button color light/dark 
+    - Default card color light/dark 
+    - Default highlight color light/dark
+    - Default border color light/dark 
+    - Default border radius
+    - Default text color light/dark
+    - Default logo style (color, radius, 
+
+*/
+
 @theme {
-  --color-background-default: grey;
+  --color-background-main: #0E100F;
+  --color-highlight: #BA0000;
+
+  --color-border: #ffffe3;
+  --color-button-background: #FFFFE3;
+  --color-button-highlight: #5e13eb;
+  --color-card-background: #191917;
+  
+  --color-background-button: #179889;
+  --color-background-button-highlight: #20D3BD;
+
+  --color-navbar-background: ##191c1b;
+  --spacing-navbar-height: 5rem;
+
+  --color-text-default: #ffffe3;
+  --color-accent1: #5e13eb;
+  --color-accent2: #20D3BD;
+  
+  --font-default: 'Space Grotesk' sans-serif;
+  /* --color-navbar-background: #02d1b2; */
 }
 
 @layer base {
   html {
     scroll-behavior: smooth;
+    box-sizing: border-box;
+  }
+
+  button {
+    cursor: pointer;
   }
 
   body {
-    background-color: var(--color-background-default);
+    background-color: var(--color-background-main);
+    color: var(--color-text-default);
+    font-family: 'Space Grotesk' sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    /* padding-top: var(--spacing-navbar-height) */
   }
 
-  nav {
-
+  /* nav.active{
+    background-color: aqua;
   }
+
+  # -buttons-container {
+    transform: scale(1) ;
+    border-radius: 80%;
+    transition: transform 0.2s ease, border-radius 1s ease;
+  }
+
+  @media screen and (max-width: 900px){
+    #navbar-buttons-container {
+      transform: scale(0.5); 
+      border-radius: 0%;
+    }
+  }
+
+  #logo{ 
+    font-family: 'Space Grotesk', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }  */
+}
+
+@layer components{
+  /* .glass { 
+    background-color: color-mix(in srgb, var(--color-background-button) 50%, transparent);
+    backdrop-filter: blur(16px);
+    border: color-mix(in srgb, var(--color-background-button) 50%, transparent);
+  } */
+
+  .navbar-full {
+    background-color: var(--color-background-main);
+    border-color: transparent;
+    border-radius: 0px;
+    border-bottom: solid;
+    margin-top: 0rem;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
+  }
+
+  .navbar-compact {
+    background-color: var(--color-navbar-background);
+    /* border-color: white; */
+    border-radius: 50px; 
+    margin-top: 1rem;
+    width: 60%;
+    height: 70%;
+    background-color: color-mix(in srgb, var(--color-background-main) 80%, transparent);
+    transition: all 0.5s ease;
+  }
+  
 }
