@@ -7,11 +7,11 @@ import { Button } from "../../components/Button"
 
 export const Home = () => {
     return(
-      <main id="home-container">
+      <main id="home-container" className="px-[5%] md:px-[10%]">
         <Hero/>
-        {/* <AboutSummary/>
+        {/* <AboutSummary/>  */}
         <TechStack/>
-        <Experience/>
+        {/* <Experience/>
         <ProjectCardList/>  */}
       </main>
     )

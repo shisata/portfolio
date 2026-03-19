@@ -34,12 +34,18 @@
   --color-text-default: #ffffe3;
   --color-accent1: #5e13eb;
   --color-accent2: #20D3BD;
+  --color-accent3: #990001;
   
   --font-default: 'Space Grotesk' sans-serif;
   /* --color-navbar-background: #02d1b2; */
 }
 
 @layer base {
+  ::selection { 
+    background: #f2d385;
+    color: var(--color-background-main);
+  }
+
   html {
     scroll-behavior: smooth;
     box-sizing: border-box;
@@ -112,5 +118,19 @@
     background-color: color-mix(in srgb, var(--color-background-main) 80%, transparent);
     transition: all 0.5s ease;
   }
-  
+
+  .font-heading-1 {
+    font-size: 4.5rem;
+    line-height: 1;
+    font-weight: 900;
+  }
+
+  .font-heading-2 {
+    font-size: 3.5rem;
+    line-height: 1;
+    font-weight: 750;
+  }
+}
+
+@layer utilities{
 }

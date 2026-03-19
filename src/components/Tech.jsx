@@ -1,8 +1,8 @@
-export const Tech = () => {
+export const Tech = ({name, logo, ...props}) => {
     return (
-        <div id="tech-container">
-            <h3>React</h3>
-            <img src="src/assets/react.svg" alt="" />
+        <div id="tech-container" className="flex">
+            <h2 className="font-heading-2">{name}</h2> 
+             <img src={logo} alt="" />
         </div>
     )
 }

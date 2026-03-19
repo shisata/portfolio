@@ -6,8 +6,17 @@ import { Works } from "./pages/Works/Works"
 import { Project1 } from "./pages/Works/Project1/Project1"
 import { Contact } from "./pages/Contact/Contact"
 import { Footer } from "./layout/Footer"
+import { useEffect, useState } from "react"
+
+// Todo: implement light/dark mode
 
 function App() {
+  const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  useEffect(() => {
+    isDarkMode? console.log(`dark mode`) : console.log(`light mode`);
+    // console.log(`${isDarkMode? `dark` : `light`}`)
+  }, [isDarkMode])
+
   return (
     <>
     {/* <div id="site-container" className="min-h-screen overflow-x-hidden"> */}

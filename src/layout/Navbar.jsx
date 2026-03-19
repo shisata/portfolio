@@ -27,15 +27,16 @@ export const Navbar = () => {
             {/* <nav id="navbar-content" className={`container mx-auto px-50 flex items-center justify-between`} > */}
             <nav id="navbar-content" className={`hidden md:flex items-center justify-between mx-auto px-20 border-2 ${isScrolled? `navbar-compact` : 'navbar-full'}`}>
                 <div id="navbar-logo-container">
-                    <NavLink to="/" end><Logo/></NavLink>
+                    <NavLink to="/" end className="px-10 py-navbar-height text-lg hover:text-highlight cursor-pointer"><Logo/></NavLink>
                 </div>
                 <div id="navbar-buttons-container" className="flex items-center">
                     {links.map((link) => {
-                        return <NavLink to={link.to} key={link.name} className="px-4 text-lg hover:text-highlight hover:cursor-pointer">
+                        return <NavLink to={link.to} key={link.name} className="px-10 py-navbar-height text-lg hover:text-highlight cursor-pointer">
                             {link.name}
                         </NavLink>
                     })}
                 </div>
+                {/* <div id="navbar-download-cv" className="px-10 py-navbar-height text-lg hover:text-highlight cursor-pointer">My CV</div> */}
             </nav>
         </header>
     )

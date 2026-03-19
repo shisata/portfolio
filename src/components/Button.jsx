@@ -1,3 +1,5 @@
+// Note: make button magnet
+
 export const Button = ({className = "", size = "default", children, ...props}) => {
 
     const baseClasses = "relative flex overflow-hidden rounded-full items-center justify-center gap-2 bg-background-button";
