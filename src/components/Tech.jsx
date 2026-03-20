@@ -14,8 +14,8 @@ export const Tech = ({name, logo, position, highlight, ...props}) => {
     }, [inView])
     
     return (
-        <div id="tech-container" className={`h-[15vh] gap-x-[2vw] justify-center  md:justify-start flex transition ease-in duration-70 ${inView? highlight : ''}`}>
-            <h2 className={`text-7xl font-bold`} ref={ref}>{name}</h2> 
+        <div id="tech-container" className={`h-[15vh] gap-x-[2vw] justify-center  md:justify-center flex transition ease-in duration-70 ${inView? highlight : ''} ${position}`}>
+            <h2 className={`text-7xl font-semibold`} ref={ref}>{name}</h2> 
             <img src={logo} alt="" className={`w-[5vw] h-[5vw] saturate-0 ${inView? `saturate-100` : ``}`}/>
         </div>
     )

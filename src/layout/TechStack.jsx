@@ -17,14 +17,14 @@ export const TechStack = () => {
     //     {name: "MongoDB", logo:"src/assets/MongoDB.png", highlight: "bg-accent1", position: "pl-[2vw]"},
     // ]
     const techList = [
-        {name: "React", logo:"src/assets/React.png", highlight: "text-background-main bg-text-default", position: "pl-[0vw]"},
-        {name: "Redux", logo:"src/assets/Redux.png", highlight: "text-background-main bg-text-default", position: "pl-[10vw]"},
-        {name: "TypesScript", logo:"src/assets/TypeScript.png", highlight: "text-background-main bg-text-default", position: "pl-[20vw]"},
-        {name: "Express", logo:"src/assets/Express.png", highlight: "text-background-main bg-text-default", position: "pl-[30vw]"},
-        {name: "Node.js", logo:"src/assets/Node.js.png", highlight: "text-background-main bg-text-default", position: "pl-[40vw]"},
-        {name: "Tailwind", logo:"src/assets/Tailwind CSS.png", highlight: "text-background-main bg-text-default", position: "pl-[50vw]"},
-        {name: "PostgreSQL", logo:"src/assets/PostgresSQL.png", highlight: "text-background-main bg-text-default", position: "pl-[80vw]"},
-        {name: "MongoDB", logo:"src/assets/MongoDB.png", highlight: "text-background-main bg-text-default", position: "pl-[2vw]"},
+        {name: "React", logo:"src/assets/React.png", highlight: "text-background-main bg-text-default", position: "pr-[15vw]"},
+        {name: "Redux", logo:"src/assets/Redux.png", highlight: "text-accent1 bg-text-default", position: "pl-[15vw]"},
+        {name: "TypesScript", logo:"src/assets/TypeScript.png", highlight: "text-accent2 bg-text-default", position: "pl-[10vw]"},
+        {name: "Express", logo:"src/assets/Express.png", highlight: "text-accent3 bg-text-default", position: "pl-[30vw]"},
+        {name: "Node.js", logo:"src/assets/Node.js.png", highlight: "text-accent4 bg-text-default", position: "pl-[25vw]"},
+        {name: "Tailwind", logo:"src/assets/Tailwind CSS.png", highlight: "text-accent5 bg-text-default", position: "pl-[10vw]"},
+        {name: "PostgreSQL", logo:"src/assets/PostgresSQL.png", highlight: "text-logo-node bg-text-default", position: "pr-[20vw]"},
+        {name: "MongoDB", logo:"src/assets/MongoDB.png", highlight: "text-logo-typescript bg-text-default", position: "pl-[2vw]"},
     ]
 
     return (
