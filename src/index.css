@@ -35,6 +35,13 @@
   --color-accent1: #5e13eb;
   --color-accent2: #20D3BD;
   --color-accent3: #990001;
+  --color-accent4: #A374FF;
+  --color-accent5: #18F1D1;
+
+  --color-logo-react: #ffffe3;
+  --color-logo-redux: #ffffe3;
+  --color-logo-typescript: #20D3BD;
+  --color-logo-node: #bbd317;
   
   --font-default: 'Space Grotesk' sans-serif;
   /* --color-navbar-background: #02d1b2; */
@@ -119,6 +126,11 @@
     transition: all 0.5s ease;
   }
 
+  /* .navbar-compact #navbar-buttons-container {
+    padding-left: 2;
+    padding-right: 2;
+  } */
+
   .font-heading-1 {
     font-size: 4.5rem;
     line-height: 1;
@@ -129,6 +141,20 @@
     font-size: 3.5rem;
     line-height: 1;
     font-weight: 750;
+  }
+
+  .animation {
+    background-color: aqua;
+    transition: all 2s ease;
+  }
+
+  @keyframes animation {
+    from {
+      background-color: #BA0000;
+    }
+    to {
+      background-color: yellow;
+    }
   }
 }
 
