@@ -30,7 +30,7 @@ export const TechStack = () => {
     return (
         <div id="tech-stack-container" className="md:mt-50 border-t-2 pt-20 min-h-screen bg-neutral">
             {/* <h2 id="tech-stack-title" className="flex font-heading-1 justify-center items-center">My expertise</h2> */}
-            <h2 id="tech-stack-title" className={`rounded- flex font-heading-1 justify-center items-center`}>My expertise</h2>
+            <h2 id="tech-stack-title" className={`rounded- flex font-heading-1 text-accent3 justify-center items-center`}>My Expertise</h2>
             <div id="tech-list-container" className="my-[10vh] flex-col">
                 {techList.map((element) => {
                     return <Tech key={element.name} name={element.name} logo={element.logo} position={element.position} highlight={element.highlight}/>

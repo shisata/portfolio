@@ -2,17 +2,17 @@ import { Hero } from "../../layout/Hero"
 import { AboutSummary } from "../../layout/AboutSummary"
 import { TechStack } from "../../layout/TechStack"
 import { Experience } from "../../layout/Experience"
-import { ProjectCardList } from "../../layout/ProjectCardList"
+import { Projects } from "../../layout/Projects"
 import { Button } from "../../components/Button"
 
 export const Home = () => {
     return(
       <main id="home-container" className="px-[5%] md:px-[10%]">
         <Hero/>
-        {/* <AboutSummary/>  */}
+        <AboutSummary/> 
         <TechStack/>
-        {/* <Experience/>
-        <ProjectCardList/>  */}
+        {/* <Experience/> */}
+        <Projects/> 
       </main>
     )
 }

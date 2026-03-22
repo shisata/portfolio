@@ -1,11 +1,11 @@
 import { Experience } from "../../layout/Experience"
-import { ProjectCardList } from "../../layout/ProjectCardList"
+import { Projects } from "../../layout/Projects"
 
 export const Works = () => {
     return(
       <main>
         <Experience/>
-        <ProjectCardList/>
+        <Projects/>
       </main>
     )
 }

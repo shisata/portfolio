@@ -10,7 +10,7 @@ export const Tech = ({name, logo, position, highlight, ...props}) => {
     });
 
     useEffect(() => {
-        inView? console.log(`${name}`) : "";
+        // inView? console.log(`${name}`) : "";
     }, [inView])
     
     return (

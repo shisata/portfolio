@@ -14,6 +14,7 @@ export const Button = ({className = "", size = "default", children, ...props}) =
         <button className={classes} {...props}>
             <span className="relative flex items-center justify-center gap-2">
                 {children}
+                {props.content}
             </span>
         </button>
     )
