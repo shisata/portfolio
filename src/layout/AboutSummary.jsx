@@ -14,7 +14,7 @@ export const AboutSummary = () => {
 
     return ( 
         <div id="about-summary-container" className="pt-10 border-t grid-flow-row">
-            <h2 id="about-summary-title" className="font-heading-3 text-accent1">What I Do</h2>
+            <h2 id="about-summary-title" className="font-heading-3 text-accent1 chat-bubble-cursor">What I Do</h2>
             <div id="roles-list-container" className="pt-[10vh] role-grid-container">
                 {cardList.map((item) => {
                     // return <RoleCard key={item.header} header={item.header} colorNum={item.colorNum} content={item.content} logoName={item.logoName}/>
