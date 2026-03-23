@@ -6,9 +6,6 @@ import { Laptop, Brush, AppWindow } from 'lucide-react';
 // const introduction = "I'm a full-stack developer currently in Vietnam";
 
 export const AboutSummary = () => {
-    // const laptopLogo = () => <Laptop/>
-    // const brushLogo = () => <Brush/>
-    // const appWindowLogo = () => <AppWindow/>
     const cardList = [
         {header: "Software Dev",colorNum: 1, content: "I love transforming business ideas into digital solution.",  logoName: "laptop"},
         {header: "UI & UX",colorNum: 2, content: "Passionate about designing interface that is enjoyable to use.",  logoName: "brush"},
@@ -24,7 +21,7 @@ export const AboutSummary = () => {
                     return <RoleCard key={item.header} header={item.header} colorNum={item.colorNum} content={item.content} logoName={item.logoName}> </RoleCard>
                 })}
             </div>
-            <Button className={`mt-[2rem] row-start-0 col-start-0`} content={`About Me`}/>
+            <Button className={`justify-self-end mt-[5rem] md:mx-[1rem]`} content={`About Me`}/>
         </div>
     )
 }

@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import { Laptop, Brush, AppWindow } from 'lucide-react';
 
-export const RoleCard = ({header, colorNum, content, logoName, ...props}) => {
+export const RoleCard = ({header, colorNum = 1, content, logoName = "laptop", ...props}) => {
     const color = {
         1 : `text-accent1`,
         2 : `text-accent2`,

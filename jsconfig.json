@@ -1,0 +1,9 @@
+// Created for shadcn 
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  }
+}
