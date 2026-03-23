@@ -188,5 +188,16 @@
 }
 
 @layer utilities{
+  .card-bg-behavior {
+    background-size: cover;
+    background-position: center;
+    /* background-color: color-mix(in srgb, black 50%, white 50%); */
+    filter: grayscale(30%);
+    transition: transform 0.5s ease; 
+  }
 
+  .card-bg-behavior:hover {
+    /* transform: scale(1.2); */
+    filter: grayscale(0%);
+  }
 }

@@ -46,7 +46,7 @@ export const Hero = () => {
                 </div>
             </div>
             <div id="avatar-container" className="">
-                <img src="../../public/portrait.jpeg" alt="" className="w-80 mr-0"/>
+                <img src="src/assets/img1.jpg" alt="" className="w-[40vw] mr-0"/>
             </div>
             {/* <div id='typewriter'></div> */}
         </div>
