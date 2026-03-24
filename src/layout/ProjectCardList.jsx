@@ -7,8 +7,8 @@ const projects = [
     {
         title: "Simplified Social Network",
         image: "src/assets/img1.jpg",
-        description: "lorem ipsoum ldkjsalkd jsakld jaslkj dlkas dlksaj",
-        tags: ["NodeJs", "Javascript", "MongoDB", "CSS", "Jquery"],
+        description: "lorem ipsoum ldkjsalkd jsakld jaslkj dlkas dlksaj lorem ipsoum ldkjsalkd jsakld jaslkj dlkas dlksaj lorem ipsoum ldkjsalkd jsakld jaslkj dlkas dlksaj",
+        tags: ["NodeJs", "Javascript", "MongoDB", "React", "React", "React", "React"],
         demo: "https://bapxao.pythonanywhere.com/",
         github: "https://bapxao.pythonanywhere.com/",
         span: "2",
@@ -16,8 +16,8 @@ const projects = [
     {
         title: "Simplified Social Network",
         image: "src/assets/img1.jpg",
-        description: "lorem ipsoum ldkjsalkd jsakld jaslkj dlkas dlksaj",
-        tags: ["NodeJs", "Javascript", "MongoDB", "CSS", "Jquery"],
+        description: "lorem ipsoum ldkjsalkd jsakld jaslkj dlkas dlksaj lorem ipsoum ldkjsalkd jsakld jaslkj dlkas dlksaj lorem ipsoum ldkjsalkd jsakld jaslkj dlkas dlksaj",
+        tags: ["NodeJs", "Javascript", "MongoDB", "React"],
         demo: "https://bapxao.pythonanywhere.com/",
         github: "https://bapxao.pythonanywhere.com/",
         span: "1",
@@ -26,7 +26,7 @@ const projects = [
         title: "Simplified Social Network",
         image: "src/assets/img1.jpg",
         description: "lorem ipsoum ldkjsalkd jsakld jaslkj dlkas dlksaj",
-        tags: ["NodeJs", "Javascript", "MongoDB", "CSS", "Jquery"],
+        tags: ["NodeJs", "Javascript", "MongoDB", "React"],
         demo: "https://bapxao.pythonanywhere.com/",
         github: "https://bapxao.pythonanywhere.com/",
         span: "1",
@@ -35,7 +35,7 @@ const projects = [
         title: "Simplified Social Network",
         image: "src/assets/img1.jpg",
         description: "lorem ipsoum ldkjsalkd jsakld jaslkj dlkas dlksaj",
-        tags: ["NodeJs", "Javascript", "MongoDB", "CSS", "Jquery"],
+        tags: ["NodeJs", "Javascript", "MongoDB", "React"],
         demo: "https://bapxao.pythonanywhere.com/",
         github: "https://bapxao.pythonanywhere.com/",
         span: "1",
@@ -44,7 +44,7 @@ const projects = [
         title: "Simplified Social Network",
         image: "src/assets/img1.jpg",
         description: "lorem ipsoum ldkjsalkd jsakld jaslkj dlkas dlksaj",
-        tags: ["NodeJs", "Javascript", "MongoDB", "CSS", "Jquery"],
+        tags: ["NodeJs", "Javascript", "MongoDB", "React"],
         demo: "https://bapxao.pythonanywhere.com/",
         github: "https://bapxao.pythonanywhere.com/",
         span: "1",
@@ -53,7 +53,7 @@ const projects = [
         title: "Simplified Social Network",
         image: "src/assets/img1.jpg",
         description: "lorem ipsoum ldkjsalkd jsakld jaslkj dlkas dlksaj",
-        tags: ["NodeJs", "Javascript", "MongoDB", "CSS", "Jquery"],
+        tags: ["NodeJs", "Javascript", "MongoDB", "React"],
         demo: "https://bapxao.pythonanywhere.com/",
         github: "https://bapxao.pythonanywhere.com/",
         span: "1",
@@ -76,7 +76,7 @@ export const ProjectCardList = () => {
     return (
         <div id="card-list" className="mt-10 grid grid-flow-row-dense xl:grid-cols-3 gap-4 place-content-center">
             {projects.map((project, idx) => {
-                return <div key={idx} id="card-container" className={`border-[0.5px] rounded-xl border-text-extra-muted min-w-[70vw] md:min-w-[40rem] xl:min-w-[20rem] h-[30rem] ${displaySpan[project.span]} relative group overflow-hidden`}>
+                return <div key={idx} id="card-container" className={`rounded-xl min-w-[70vw] md:min-w-[40rem] xl:min-w-[20rem] h-[30rem] ${displaySpan[project.span]} relative group overflow-hidden`}>
                     {/* Image Div */}
                     <div className="w-full h-full overflow-hidden relative">
                         <img src={project.image} alt={project.name} className="w-full h-full object-cover object-center group-hover:scale-110 group-hover:blur-xs group-hover:grayscale-25 duration-500 delay-100"/>
@@ -87,11 +87,30 @@ export const ProjectCardList = () => {
                         <ProjectButton logoName={"github"} url={project.github}/>
                     </div>
                     {/* Info panel */}
-                    <div className="absolute bottom-[-20%] top-auto left-0 right-0 w-full h-[50%] bg-text-default group-hover:bottom-0 transition-all duration-200">
-                        <div name="info-positioner" className="text-background-main w-full h-full flex-col">
-                            <h3 className="font-semibold text-2xl ">{project.title}</h3>
-                            <p className="">{project.description}</p>
-                            
+                    <div className={`absolute ${isMobile? `bottom-0` : `bottom-[-20%]`} group-hover:bottom-0 top-auto left-0 right-0 w-full h-[60%] p-4 bg-card1 transition-all duration-200`}>
+                        <div name="info-positioner" className="w-full h-full relative grid gap-1 grid-rows-2 grid-cols-3 md:grid-cols-5">
+                            {/* Text section */}
+                            <div name="text-grid-container" className="col-span-full row-start-1 relative">
+                                <h3 className="font-semibold text-2xl">{project.title}</h3>
+                                <p className="pt-2 text-ellipsis">{project.description}</p>
+                            </div>
+                            {/* Tags section */}
+                            <div name="tags-grid-container" className="row-start-2 col-span-2 md:col-span-4">
+                                {/* <div className="absolute bottom-[35%] left-0 right-auto top-auto flex gap-1 flex-wrap w-[50%]">  */}
+                                <div className="gap-x-1 gap-y-4 flex flex-wrap"> 
+                                    {project.tags.map((tag, idx) => {
+                                        return <span key={idx} className="w-[7rem] h-[2rem] rounded-full bg-white flex place-content-center">
+
+                                        </span>
+                                    })}
+                                </div>
+                            </div>
+                            {/* Details section */}
+                            <div name="details-grid-container" className="row-start-2 col-start-3 md:col-start-5 relative">
+                                <div className="absolute bottom-[1rem] right-[1rem] left-auto top-auto w-[5rem] h-[2rem] rounded-full bg-white hover:bg-amber-50 flex place-content-center">
+                                    <a href="" className="font-medium text-sm text-background-main self-center">Details</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
