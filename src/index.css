@@ -18,7 +18,7 @@
 
 @theme {
   --color-background-main: #0E100F;
-  --color-background-lighter: #222623;
+  --color-background-lighter: #1A1D1B;
   /* --color-background-main: #1A191D; */
   /* --color-background-neutral-dark: #1A191D; */
   --color-highlight: #da1600;
@@ -50,7 +50,9 @@
   --color-logo-node: #bbd317;
 
   --color-card1: #191917;
-  --color-card-dimming: color-mix(in srgb, var(--color-background-main) 90%, transparent);
+  --color-card-tag: #222623;
+  /* --color-card-dimming: color-mix(in srgb, var(--color-background-main) 90%, transparent); */
+
 
   --font-default: 'Space Grotesk' sans-serif;
   /* --color-navbar-background: #02d1b2; */

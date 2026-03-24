@@ -17,7 +17,7 @@ const projects = [
         title: "SimpleCity",
         image: "src/assets/simple-city.png",
         description: "Mobile app with admin management system. Consulted, designed and set up the project for the client.",
-        tags: ["Prototype", "TypeScript", "React", "Redux", "PostgreSQL"],
+        tags: ["Prototype", "TypeScript", "React", "Redux", "PostgreSQL", "NodeJS"],
         demo: "https://bapxao.pythonanywhere.com/",
         github: "https://bapxao.pythonanywhere.com/",
         span: "1",
@@ -90,7 +90,7 @@ export const ProjectCardList = () => {
                                 {/* <div className="absolute bottom-[35%] left-0 right-auto top-auto flex gap-1 flex-wrap w-[50%]">  */}
                                 <div className="gap-x-1 gap-y-4 flex flex-wrap"> 
                                     {project.tags.map((tag, idx) => {
-                                        return <span key={idx} className="w-[7rem] h-[2rem] rounded-full bg-background-lighter flex items-center place-content-center text-text-default">
+                                        return <span key={idx} className="w-[7rem] h-[2rem] rounded-full bg-card-tag flex items-center place-content-center text-text-default">
                                             {tag}
                                         </span>
                                     })}

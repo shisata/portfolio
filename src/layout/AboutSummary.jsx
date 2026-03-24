@@ -1,6 +1,6 @@
 import { RoleCard } from "../components/RoleCard"
 import { Button } from "../components/Button"
-import { Laptop, Brush, AppWindow } from 'lucide-react';
+import { Laptop, Brush, AppWindow, ArrowUpRight} from 'lucide-react';
 
 // Note: Use Variable Proximity (react bits) for paragraph
 // const introduction = "I'm a full-stack developer currently in Vietnam";
@@ -21,7 +21,11 @@ export const AboutSummary = () => {
                     return <RoleCard key={idx} header={item.header} colorNum={item.colorNum} content={item.content} logoName={item.logoName}> </RoleCard>
                 })}
             </div>
-            <Button className={`justify-self-end mt-[5rem] md:mx-[1rem]`} content={`About Me`}/>
+            {/* <Button className={`justify-self-end mt-[5rem] md:mx-[1rem]`} content={`About Me`}/> */}
+            <a href="#" name="" className="text-2xl flex mt-10 justify-self-center justify-end px-0.5 w-full hover:bg-text-default hover:text-background-main duration-200 transition-all">
+                About Me
+                <ArrowUpRight/>
+            </a>
         </div>
     )
 }

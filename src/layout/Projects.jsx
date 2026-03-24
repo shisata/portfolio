@@ -10,7 +10,7 @@ export const Projects = () => {
                 <ProjectCardList/>
             </div>
             {/* <button id="projects-details" className="w-[10vw] h-[3vw] rounded-full text-background-main text-2xl font-medium border-background-main bg-button-background">Details</button> */}
-            <a href="#" name="" className="flex mt-10 justify-self-center px-0.5 w-full hover:bg-text-default hover:text-background-main duration-200 transition-all">
+            <a href="#" name="" className="text-2xl flex mt-10 justify-self-center px-0.5 w-full hover:bg-text-default hover:text-background-main duration-200 transition-all">
                 Learn More
                 <ArrowUpRight/>
             </a>
