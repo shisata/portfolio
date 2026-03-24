@@ -7,7 +7,7 @@ const logos = {
 }
 
 const logoColors = {
-    white: "bg-white",
+    white: "bg-text-default",
 }
 
 
