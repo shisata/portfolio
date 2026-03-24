@@ -16,9 +16,9 @@ export const AboutSummary = () => {
         <div id="about-summary-container" className="pt-10 border-t grid-flow-row">
             <h2 id="about-summary-title" className="font-heading-3 text-accent1 chat-bubble-cursor">What I Do</h2>
             <div id="roles-list-container" className="pt-[10vh] role-grid-container">
-                {cardList.map((item) => {
+                {cardList.map((item, idx) => {
                     // return <RoleCard key={item.header} header={item.header} colorNum={item.colorNum} content={item.content} logoName={item.logoName}/>
-                    return <RoleCard key={item.header} header={item.header} colorNum={item.colorNum} content={item.content} logoName={item.logoName}> </RoleCard>
+                    return <RoleCard key={idx} header={item.header} colorNum={item.colorNum} content={item.content} logoName={item.logoName}> </RoleCard>
                 })}
             </div>
             <Button className={`justify-self-end mt-[5rem] md:mx-[1rem]`} content={`About Me`}/>

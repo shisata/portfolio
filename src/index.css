@@ -40,7 +40,7 @@
   --color-accent1: #A374FF;
   --color-accent2: #20D3BD;
   --color-accent3: #dc5603;
-  --color-accent4: #A374FF;
+  --color-accent4: #42F5A5;
   --color-accent5: #18F1D1;
 
 
@@ -50,6 +50,7 @@
   --color-logo-node: #bbd317;
 
   --color-card1: #191917;
+  --color-card-dimming: color-mix(in srgb, var(--color-background-main) 90%, transparent);
 
   --font-default: 'Space Grotesk' sans-serif;
   /* --color-navbar-background: #02d1b2; */
@@ -197,7 +198,7 @@
   }
 
   .card-bg-behavior:hover {
-    /* transform: scale(1.2); */
+    transform: scale(1.2);
     filter: grayscale(0%);
   }
 }

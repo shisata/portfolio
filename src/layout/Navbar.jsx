@@ -30,8 +30,8 @@ export const Navbar = () => {
                     <NavLink to="/" end className="px-2 lg:px-10 py-navbar-height text-lg hover:text-highlight cursor-pointer"><Logo/></NavLink>
                 </div>
                 <div id="navbar-buttons-container" className="ml-auto flex items-center">
-                    {links.map((link) => {
-                        return <NavLink to={link.to} key={link.name} className="px-2 lg:px-10 py-navbar-height text-lg hover:text-highlight cursor-pointer">
+                    {links.map((link, idx) => {
+                        return <NavLink to={link.to} key={idx} className="px-2 lg:px-10 py-navbar-height text-lg hover:text-highlight cursor-pointer">
                             {link.name}
                         </NavLink>
                     })}
