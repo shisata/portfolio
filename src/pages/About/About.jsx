@@ -1,6 +1,6 @@
 export const About = () => {
     return(
-      <main>
+      <main className={`min-h-screen`}>
         About
       </main>
     )

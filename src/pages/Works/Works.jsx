@@ -3,7 +3,7 @@ import { Projects } from "../../layout/Projects"
 
 export const Works = () => {
     return(
-      <main>
+      <main className={`min-h-screen`}>
         <Experience/>
         <Projects/>
       </main>

@@ -16,7 +16,7 @@
 
 */
 
-@theme {
+@theme inline{
   --color-background-main: #0E100F;
   --color-background-lighter: #1A1D1B;
   /* --color-background-main: #1A191D; */
@@ -33,6 +33,8 @@
 
   --color-navbar-background: ##191c1b;
   --spacing-navbar-height: 5rem;
+  --spacing-navbar-mobile-height: calc(var(--spacing-navbar-height) * 0.7);
+  --spacing-body-padding-top: calc(var(--spacing-navbar-height) + 1rem);
 
   --color-text-default: #ffffe3;
   --color-text-muted: #B1B19D;

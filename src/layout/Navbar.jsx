@@ -1,14 +1,23 @@
 import { NavLink } from "react-router"
 import { Logo } from "../components/Logo"
 import { useEffect, useState } from "react"
-import { FileText } from 'lucide-react';
+import { FileText, Menu, X } from 'lucide-react';
+
 
 
 const threshold = 100; // 100px = navbar-height + 20px for extra spacing
+const links = [
+    { name: "Works",to: "/" },
+    { name: "About",to: "/about" },
+    { name: "Contact",to: "/contact" },
+]
+
+const resumeLink = `https://docs.google.com/document/d/1E5Lgvr97P5Ygb4fQk8dN7t94lE7gxnYI40c8HVVBMrY/edit?usp=drive_link`
 
 export const Navbar = () => {
-    // Handles navbar state up after checkpoint
-    const [isScrolled, setIsScrolled] = useState(false);
+    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false); // Handles navbar state up after checkpoint
+    
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > threshold)
@@ -19,15 +28,11 @@ export const Navbar = () => {
         }
     })
     
-    const links = [
-        { name: "Works",to: "/" },
-        { name: "About",to: "/about" },
-        { name: "Contact",to: "/contact" },
-    ]
-
     const glassDisplaySwitcher = `${isScrolled ? `navbar-glass` : `navbar-regular`}`
+    const mobileMenuDisplay = `${isMobileMenuOpen ? `top-navbar-mobile-height` : `top-[-100vh]`}`
+    const navbarSeperatorDisplay = `${isMobileMenuOpen ? `border-b-1 border-background-main` : ``}`
     return(
-        <header id="navbar-container" className="fixed z-1 top-0 left-0 right-0 w-full h-navbar-height overflow-hidden"> 
+        <header id="navbar-container" className="fixed z-1 top-0 left-0 right-0 w-full h-navbar-height"> 
             {/* Desktop NavBar */}
             <nav id="navbar-desktop-container" className={`hidden md:flex md:justify-around h-full items-center mx-auto px-[2rem] transition-all duration-400 ${isScrolled ? `` : `bg-background-main hover:bg-text-default hover:text-background-main py-[1rem]`}`}>
                 {/* Logo Container */}
@@ -49,7 +54,7 @@ export const Navbar = () => {
                 {/* Desktop CTA Container */}
                 <div id="navbar-cta-container" className={`cursor-pointer flex gap-x-1 items-center hover:text-highlight ${glassDisplaySwitcher}`}>
                     <FileText/>
-                    <a href="https://docs.google.com/document/d/1E5Lgvr97P5Ygb4fQk8dN7t94lE7gxnYI40c8HVVBMrY/edit?usp=drive_link" target="_blank" rel="noopener noreferrer"
+                    <a href={resumeLink} target="_blank" rel="noopener noreferrer"
                     className={`text-xl font-medium`}>
                     Resume
                     </a>
@@ -57,7 +62,35 @@ export const Navbar = () => {
                 {/* <div name="navbar-download-cv" className="px-10 py-navbar-height text-lg hover:text-highlight cursor-pointer">My CV</div> */}
             </nav>
             {/* Mobile */}
-            <nav></nav>
+            <nav id="navbar-mobile-container" className={`z-20 md:hidden flex justify-between h-navbar-mobile-height items-center bg-text-default relative ${navbarSeperatorDisplay}`}>
+                {/* Logo Container */}
+                <div id="navbar-logo-content" className={`flex items-center navbar-regular`}>
+                    <NavLink to="/" end className={`${/*px-2 lg:px-10*/''} text-2xl font-bold text-background-main`}>
+                    &gt;JoshTran_
+                    </NavLink>
+                </div>
+                {/* Menu Button Container */}
+                <div id="navbar-mobile-menu-button" 
+                    className={`flex items-center navbar-regular text-background-main`}
+                    onClick={() => {setMobileMenuOpen((prev) => !prev)}}>
+                    { isMobileMenuOpen ? <X/> : <Menu/>}
+                </div>
+            </nav>
+            {/* Mobile Full Menu */}
+            <div id="navbar-mobile-menu" className={`md:hidden z-1 bg-text-default absolute bottom-auto left-0 right-0 w-full h-[30vh] ${mobileMenuDisplay} transition-all duration-200 flex flex-col gap-[1rem] p-[1rem] underline text-xl font-medium text-background-main`}>
+                {links.map((link, idx) => {
+                    return <NavLink to={link.to} key={idx} className={``}>
+                        {link.name}
+                    </NavLink>
+                })}
+                <div className="flex gap-1 underline items-end-safe">
+                    <a href={resumeLink} target="_blank" rel="noopener noreferrer"
+                    className={`bg-accent2`}>
+                    Resume
+                    </a>
+                    <FileText/>
+                </div>
+            </div>
         </header>
     )
 }
