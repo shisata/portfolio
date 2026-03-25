@@ -115,12 +115,34 @@
 }
 
 @layer components{
-  .glass { 
-    background-color: color-mix(in srgb, var(--color-background-button) 50%, transparent);
-    backdrop-filter: blur(16px);
-    border: color-mix(in srgb, var(--color-background-button) 50%, transparent);
+  /* Navbar appearance when not scrolled down */
+  .navbar-regular {
+    height: 100%;
+    padding: 0 0.75rem;
+    transition: all 0.5s ease;
   }
 
+  /* Make navbar sections into glass display */
+  .navbar-glass { 
+    /* background-color: color-mix(in srgb, var(--color-background-main) 60%, transparent);
+    color: var(--color-text-muted);
+    backdrop-filter: blur(0.5rem); */
+    height: 60%;
+    padding: 0 2rem;
+    border-radius: 50px;
+    background-color: color-mix(in srgb, var(--color-text-default) 5%, transparent);
+    color: var(--color-text-default);
+    backdrop-filter: blur(0.5rem);
+    transition: all 0.5s ease;
+  }
+
+  /* Changes background of all glass containers when hover in navbar area*/
+  #navbar-desktop-container:hover .navbar-glass{
+    background-color: var(--color-text-default);
+    color: var(--color-background-lighter);
+  }
+
+  /* ///////Previous implementation of glass containers////// */
   .navbar-full {
     background-color: var(--color-background-main);
     /* border-color: transparent; */
@@ -156,6 +178,7 @@
     background-color: var(--color-text-default);
     color: var(--color-background-lighter);
   }
+  /* ////////////////////////////////////////// */
 
   .role-grid-container { 
     display: grid;
