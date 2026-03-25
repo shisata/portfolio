@@ -7,7 +7,7 @@ import { FileText, Menu, X } from 'lucide-react';
 
 const threshold = 100; // 100px = navbar-height + 20px for extra spacing
 const links = [
-    { name: "Works",to: "/" },
+    { name: "Works",to: "/works" },
     { name: "About",to: "/about" },
     { name: "Contact",to: "/contact" },
 ]
