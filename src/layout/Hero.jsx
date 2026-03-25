@@ -39,7 +39,7 @@ export const Hero = () => {
         <div id="hero-container" className="min-h-screen p-2 lg:p-20 lg:mx-auto grid grid-cols-1 md:grid-cols-[60%_40%]">
             <div id="slogan-container">
                 <div id="typewriter-container" className={`${commonClass} w-full h-100 md:h-40`}></div>
-                <h1 className={`${commonClass} text-9xl text-highlight`}>Josh Tran</h1>
+                <h1 className={`${commonClass} text-9xl text-hero-highlight`}>Josh Tran</h1>
                 <div id='short-intro' className='mt-10'>
                     <p>
                         //<span className='hover:bg-accent3 cursor-default'> Based in Ho Chi Minh, Vietnam <br/></span>

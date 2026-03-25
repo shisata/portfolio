@@ -12,7 +12,7 @@ const links = [
     { name: "Contact",to: "/contact" },
 ]
 
-const resumeLink = `https://docs.google.com/document/d/1E5Lgvr97P5Ygb4fQk8dN7t94lE7gxnYI40c8HVVBMrY/edit?usp=drive_link`
+const resumeLink = `https://drive.google.com/file/d/1wZaDgBntmCO_Ib_hWDbmExiKQ6qeVeqS/view`
 
 export const Navbar = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -28,16 +28,17 @@ export const Navbar = () => {
         }
     })
     
+    const inactiveNavContainerHover = `${isScrolled ? `` : `bg-background-main hover:bg-text-default hover:text-background-main py-[1rem] group`}`
     const glassDisplaySwitcher = `${isScrolled ? `navbar-glass` : `navbar-regular`}`
     const mobileMenuDisplay = `${isMobileMenuOpen ? `top-navbar-mobile-height` : `top-[-100vh]`}`
     const navbarSeperatorDisplay = `${isMobileMenuOpen ? `border-b-1 border-background-main` : ``}`
     return(
         <header id="navbar-container" className="fixed z-1 top-0 left-0 right-0 w-full h-navbar-height"> 
             {/* Desktop NavBar */}
-            <nav id="navbar-desktop-container" className={`hidden md:flex md:justify-around h-full items-center mx-auto px-[2rem] transition-all duration-400 ${isScrolled ? `` : `bg-background-main hover:bg-text-default hover:text-background-main py-[1rem]`}`}>
+            <nav id="navbar-desktop-container" className={`hidden md:flex md:justify-around h-full items-center mx-auto px-[2rem] transition-all duration-400 ${inactiveNavContainerHover}`}>
                 {/* Logo Container */}
-                <div id="navbar-logo-content" className={`cursor-pointer group flex items-center ${glassDisplaySwitcher}`}>
-                    <NavLink to="/" end className={`${/*px-2 lg:px-10*/''} text-2xl font-bold group-hover:text-highlight`}>
+                <div id="navbar-logo-content" className={`cursor-pointer flex items-center ${glassDisplaySwitcher}`}>
+                    <NavLink to="/" end className={`text-2xl font-bold hover:text-highlight`}>
                     &gt;JoshTran_
                     </NavLink>
                 </div>
@@ -52,20 +53,19 @@ export const Navbar = () => {
                 </div>
 
                 {/* Desktop CTA Container */}
-                <div id="navbar-cta-container" className={`cursor-pointer flex gap-x-1 items-center hover:text-highlight ${glassDisplaySwitcher}`}>
+                <div id="navbar-cta-container" className={`cursor-pointer flex gap-x-1 items-center hover:text-highlight ${glassDisplaySwitcher} ${isScrolled ? `` : `text-accent3 group-hover:text-background-main`}`}>
                     <FileText/>
                     <a href={resumeLink} target="_blank" rel="noopener noreferrer"
                     className={`text-xl font-medium`}>
                     Resume
                     </a>
                 </div>
-                {/* <div name="navbar-download-cv" className="px-10 py-navbar-height text-lg hover:text-highlight cursor-pointer">My CV</div> */}
             </nav>
             {/* Mobile */}
             <nav id="navbar-mobile-container" className={`z-20 md:hidden flex justify-between h-navbar-mobile-height items-center bg-text-default relative ${navbarSeperatorDisplay}`}>
                 {/* Logo Container */}
                 <div id="navbar-logo-content" className={`flex items-center navbar-regular`}>
-                    <NavLink to="/" end className={`${/*px-2 lg:px-10*/''} text-2xl font-bold text-background-main`}>
+                    <NavLink to="/" end className={`text-2xl font-bold text-background-main`}>
                     &gt;JoshTran_
                     </NavLink>
                 </div>
@@ -85,7 +85,7 @@ export const Navbar = () => {
                 })}
                 <div className="flex gap-1 underline items-end-safe">
                     <a href={resumeLink} target="_blank" rel="noopener noreferrer"
-                    className={`bg-accent2`}>
+                    className={`bg-accent3`}>
                     Resume
                     </a>
                     <FileText/>

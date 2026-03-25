@@ -19,9 +19,8 @@
 @theme inline{
   --color-background-main: #0E100F;
   --color-background-lighter: #1A1D1B;
-  /* --color-background-main: #1A191D; */
-  /* --color-background-neutral-dark: #1A191D; */
-  --color-highlight: #881300;
+  --color-hero-highlight: #881300;
+  --color-highlight: #CB4D03;
 
   --color-border: #ffffe3;
   --color-button-background: #20D3BD;
@@ -132,10 +131,14 @@
     height: 60%;
     padding: 0 2rem;
     border-radius: 50px;
-    background-color: color-mix(in srgb, var(--color-text-default) 5%, transparent);
+    background-color: color-mix(in srgb, var(--color-accent3-muted) 7%, transparent);
     color: var(--color-text-default);
     backdrop-filter: blur(0.5rem);
     transition: all 0.5s ease;
+  }
+
+  .navbar-glass#navbar-cta-container { 
+    background-color: color-mix(in srgb, var(--color-accent3) 40%, transparent);
   }
 
   /* Changes background of all glass containers when hover in navbar area*/
