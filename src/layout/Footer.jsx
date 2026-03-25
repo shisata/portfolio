@@ -20,7 +20,7 @@ export const Footer = () => {
                     <div name="links-container" className="mt-[1rem] flex flex-col gap-[0.5rem]">
                         <ContactLink name={"LinkedIn"} logoName={"linkedin"} logoColor={"white"} url={"https://www.linkedin.com/in/joshtranwork/"}/>
                         <ContactLink name={"GitHub"} logoName={"github"} logoColor={"white"} url={"https://github.com/shisata"}/>
-                        <ContactLink name={"Zalo"} logoName={"zalo"} logoColor={"white"} url={"https://github.com/shisata"}/>
+                        <ContactLink name={"Zalo"} logoName={"zalo"} logoColor={"white"} url={"https://zalo.me/16043683850"}/>
                         <ContactLink name={"joshtranwork@gmail.com"} logoName={"email"} logoColor={"white"} url={"mailto:joshtranwork@gmail.com"}/>
                     </div>
                 </div>
