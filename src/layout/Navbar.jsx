@@ -65,7 +65,8 @@ export const Navbar = () => {
             <nav id="navbar-mobile-container" className={`z-20 md:hidden flex justify-between h-navbar-mobile-height items-center bg-text-default relative ${navbarSeperatorDisplay}`}>
                 {/* Logo Container */}
                 <div id="navbar-logo-content" className={`flex items-center navbar-regular`}>
-                    <NavLink to="/" end className={`text-2xl font-bold text-background-main`}>
+                    <NavLink to="/" end onClick={() => {setMobileMenuOpen(false)}}
+                    className={`text-2xl font-bold text-background-main`}>
                     &gt;JoshTran_
                     </NavLink>
                 </div>
@@ -79,12 +80,12 @@ export const Navbar = () => {
             {/* Mobile Full Menu */}
             <div id="navbar-mobile-menu" className={`md:hidden z-1 bg-text-default absolute bottom-auto left-0 right-0 w-full h-[30vh] ${mobileMenuDisplay} transition-all duration-200 flex flex-col gap-[1rem] p-[1rem] underline text-xl font-medium text-background-main`}>
                 {links.map((link, idx) => {
-                    return <NavLink to={link.to} key={idx} className={``}>
+                    return <NavLink to={link.to} key={idx} className={``} onClick={() => {setMobileMenuOpen(false)}}>
                         {link.name}
                     </NavLink>
                 })}
                 <div className="flex gap-1 underline items-end-safe">
-                    <a href={resumeLink} target="_blank" rel="noopener noreferrer"
+                    <a href={resumeLink} target="_blank" rel="noopener noreferrer" onClick={() => {setMobileMenuOpen(false)}}
                     className={`bg-accent3`}>
                     Resume
                     </a>

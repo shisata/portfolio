@@ -1,6 +1,7 @@
 import { RoleCard } from "../components/RoleCard"
 import { Button } from "../components/Button"
 import { Laptop, Brush, AppWindow, ArrowUpRight} from 'lucide-react';
+import { NavLink } from "react-router";
 
 // Note: Use Variable Proximity (react bits) for paragraph
 // const introduction = "I'm a full-stack developer currently in Vietnam";
@@ -22,10 +23,10 @@ export const AboutSummary = () => {
                 })}
             </div>
             {/* <Button className={`justify-self-end mt-[5rem] md:mx-[1rem]`} content={`About Me`}/> */}
-            <a href="#" name="" className="text-2xl flex mt-10 justify-self-center justify-end px-0.5 w-full hover:bg-text-default hover:text-background-main duration-200 transition-all">
+            <NavLink to="/about" end className="text-2xl flex mt-10 justify-self-center justify-end px-0.5 w-full hover:bg-text-default hover:text-background-main duration-200 transition-all">
                 About Me
                 <ArrowUpRight/>
-            </a>
+            </NavLink>
         </div>
     )
 }
