@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import Typewriter from 'typewriter-effect/dist/core';
 import portraitUrl from "/src/images/portrait.jpg"
 import portraitNoBackgroundUrl from "/src/images/portrait-no-background.png"
+import { NavLink } from 'react-router';
 
 export const Hero = () => {
     // const commonClass = "text-7xl font-black";
@@ -47,9 +48,9 @@ export const Hero = () => {
                     </p>
                 </div>
             </div>
-            <a href="/about" id="avatar-container" className="">
-                <img href="/about" src={portraitNoBackgroundUrl} alt={portraitUrl} className=" mr-0 grayscale rounded-4xl hover:bg-background-lighter hover:shadow-xl hover:shadow-text-extra-muted hover:grayscale-0 transition-all duration-300"/>
-            </a>
+            <NavLink to="/about" end id="avatar-container" className="">
+                <img src={portraitNoBackgroundUrl} alt={portraitUrl} className=" mr-0 grayscale rounded-4xl hover:bg-background-lighter hover:shadow-xl hover:shadow-text-extra-muted hover:grayscale-0 transition-all duration-300"/>
+            </NavLink>
             {/* <div id='typewriter'></div> */}
         </div>
     )
