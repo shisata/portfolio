@@ -1,6 +1,6 @@
 import { useEffect } from "react"
-import demoUrl from "/public/images/square-arrow-out-up-right.svg"
-import githubUrl from "/public/images/github.svg"
+import demoUrl from "/src/images/square-arrow-out-up-right.svg"
+import githubUrl from "/src/images/github.svg"
 
 const logos = {
     demo: demoUrl,

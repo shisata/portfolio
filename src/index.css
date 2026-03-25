@@ -145,9 +145,9 @@
     margin-top: 1rem;
     width: 60%;
     height: 70%;
-    background-color: color-mix(in srgb, var(--color-background-main) 80%, transparent);
+    background-color: color-mix(in srgb, var(--color-background-main) 60%, transparent);
     color: var(--color-text-muted);
-    backdrop-filter: blur(1.5rem);
+    backdrop-filter: blur(0.5rem);
     transition: all 0.5s ease;
     /* border: 0.75px solid color-mix(in srgb, color var(--color-accent1) 50%, transparent) */
   }

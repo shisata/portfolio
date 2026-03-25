@@ -1,13 +1,13 @@
 import { Tech } from "../components/Tech"
-import reactUrl from "/public/images/React.png"
-import reduxUrl from "/public/images/Redux.png"
-import javascriptUrl from "/public/images/JavaScript.png"
-import express from "/public/images/Express.png"
-import nodejsUrl from "/public/images/Node.js.png"
-import tailwindUrl from "/public/images/Tailwind CSS.png"
-import postgresqlUrl from "/public/images/PostgresSQL.png"
-import mongodbUrl from "/public/images/MongoDB.png"
-import typescriptUrl from "/public/images/TypeScript.png"
+import reactUrl from "/src/images/React.png"
+import reduxUrl from "/src/images/Redux.png"
+import javascriptUrl from "/src/images/JavaScript.png"
+import express from "/src/images/Express.png"
+import nodejsUrl from "/src/images/Node.js.png"
+import tailwindUrl from "/src/images/Tailwind CSS.png"
+import postgresqlUrl from "/src/images/PostgresSQL.png"
+import mongodbUrl from "/src/images/MongoDB.png"
+import typescriptUrl from "/src/images/TypeScript.png"
 
 
 // Javascript Typescript NodeJS ExpressJS React / Redux Toolkit PostgreSQL MongoDB Tailwind

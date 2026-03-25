@@ -2,11 +2,11 @@ import { useEffect, useState } from "react"
 import { ProjectCard } from "../components/ProjectCard"
 import { ProjectButton } from "@/components/ProjectButton"
 import { checkUserIsMobile } from "@/lib/checkUserIsMobile"
-import simplifiedSocialNetworkUrl from "/public/images/simplified-social-network.png"
-import simpleCityUrl from "/public/images/simple-city.png"
-import sfunitUrl from "/public/images/sfunit.png"
-import cmpt363Url from "/public/images/img1.jpg"
-import chip8Url from "/public/images/CHIP8-emulator.png"
+import simplifiedSocialNetworkUrl from "/src/images/simplified-social-network.png"
+import simpleCityUrl from "/src/images/simple-city.png"
+import sfunitUrl from "/src/images/sfunit.png"
+import cmpt363Url from "/src/images/img1.jpg"
+import chip8Url from "/src/images/CHIP8-emulator.png"
 
 const projects = [
     {

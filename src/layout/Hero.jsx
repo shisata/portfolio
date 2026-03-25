@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import Typewriter from 'typewriter-effect/dist/core';
-import portraitUrl from "/public/images/portrait.jpg"
-import portraitNoBackgroundUrl from "/public/images/portrait-no-background.png"
+import portraitUrl from "/src/images/portrait.jpg"
+import portraitNoBackgroundUrl from "/src/images/portrait-no-background.png"
 
 export const Hero = () => {
     // const commonClass = "text-7xl font-black";
