@@ -2,7 +2,7 @@ import { ContactLink } from "@/components/ContactLink"
 
 export const Footer = () => {
     return (
-        <div id="footer-container" className="mt-20 w-full h-[35vh] rounded-t-[4rem] border-t-[0.25px] border-text-muted bg-background-lighter relative overflow-hidden">
+        <div id="footer-container" className="mt-20 w-full h-[45vh] rounded-t-[4rem] border-t-[0.25px] border-text-muted bg-background-lighter relative overflow-hidden">
             <div name="slogan-container" className="absolute left-0 right-0 bottom-[-1rem] sm:bottom-[-1.75rem] lg:bottom-[-2.25rem] text-nowrap">
                 {/* Disclaimer */}
                 <p name="disclaimer" className="text-center my-auto">
