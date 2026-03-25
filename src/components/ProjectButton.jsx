@@ -1,8 +1,10 @@
 import { useEffect } from "react"
+import demoUrl from "/public/images/square-arrow-out-up-right.svg"
+import githubUrl from "/public/images/github.svg"
 
 const logos = {
-    demo: "src/assets/square-arrow-out-up-right.svg",
-    github: "src/assets/github.svg"
+    demo: demoUrl,
+    github: githubUrl
 }
 
 export const ProjectButton = ({logoName, url}) => {

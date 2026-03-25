@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import Typewriter from 'typewriter-effect/dist/core';
+import portraitUrl from "/public/images/portrait.jpg"
 
 export const Hero = () => {
     // const commonClass = "text-7xl font-black";
@@ -46,7 +47,7 @@ export const Hero = () => {
                 </div>
             </div>
             <div id="avatar-container" className="">
-                <img src="src/assets/img1.jpg" alt="" className="w-[40vw] mr-0"/>
+                <img src={portraitUrl} alt="" className=" mr-0 grayscale"/>
             </div>
             {/* <div id='typewriter'></div> */}
         </div>

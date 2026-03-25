@@ -20,7 +20,7 @@ function App() {
   return (
     <>
     {/* <div id="site-container" className="min-h-screen overflow-x-hidden"> */}
-    <div id="site-container" className="overflow-x-hidden pt-navbar-height">
+    <div id="site-container" className={`overflow-x-hidden pt-navbar-height`}>
       <Navbar/>
       <Routes>
         <Route index element={<Home/>}/>

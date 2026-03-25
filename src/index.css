@@ -45,10 +45,15 @@
   --color-accent5: #06BAD5;
 
 
-  --color-logo-react: #ffffe3;
-  --color-logo-redux: #ffffe3;
+  --color-logo-react: #60DCFB;
+  --color-logo-redux: #764ABD;
   --color-logo-typescript: #20D3BD;
-  --color-logo-node: #bbd317;
+  --color-logo-javascript: #EFDB4E;
+  --color-logo-express: #FFFFF0;
+  --color-logo-nodejs: #83CD29;
+  --color-logo-tailwind: #39BDF9;
+  --color-logo-postgresql: #326691;
+  --color-logo-mongodb: #419830;
 
   --color-card1: #191917;
   --color-card-tag: #222623;
@@ -110,11 +115,11 @@
 }
 
 @layer components{
-  /* .glass { 
+  .glass { 
     background-color: color-mix(in srgb, var(--color-background-button) 50%, transparent);
     backdrop-filter: blur(16px);
     border: color-mix(in srgb, var(--color-background-button) 50%, transparent);
-  } */
+  }
 
   .navbar-full {
     background-color: var(--color-background-main);
@@ -191,7 +196,7 @@
     /* Specify the path to your chat bubble image */
     /* The number coordinates (optional) adjust the hotspot position */
     /* 'auto' or 'pointer' should be the final fallback keyword */
-    cursor: url('@/assets/React.png'), auto;
+    /* cursor: url('@/public/images/React.png'), auto; */
     color:#BA0000;
   }
 

@@ -11,9 +11,9 @@ export const AboutSummary = () => {
         {header: "UI & UX",colorNum: 2, content: "Passionate about designing interface that is enjoyable to use.",  logoName: "brush"},
         {header: "Frontend Dev",colorNum: 3, content: "Bringing vison to life with the latest technology and design trend.",  logoName: "appWindow"},
     ]
-
+    
     return ( 
-        <div id="about-summary-container" className="pt-10 border-t grid-flow-row">
+        <div id="about-summary-container" className="pt-10 border-t-[0.75px] grid-flow-row">
             <h2 id="about-summary-title" className="font-heading-3 text-accent1 chat-bubble-cursor">What I Do</h2>
             <div id="roles-list-container" className="pt-[10vh] role-grid-container">
                 {cardList.map((item, idx) => {

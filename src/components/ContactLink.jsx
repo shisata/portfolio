@@ -1,9 +1,13 @@
+import linkedinUrl from "/public/images/linkedin.svg"
+import githubUrl from "/public/images/github.svg"
+import zaloUrl from "/public/images/zalo.svg"
+import emailUrl from "/public/images/mail.svg"
 
 const logos = {
-    linkedin: "src/assets/linkedin.svg",
-    github: "src/assets/github.svg",
-    zalo: "src/assets/zalo.svg",
-    email: "src/assets/mail.svg"
+    linkedin: linkedinUrl,
+    github: githubUrl,
+    zalo: zaloUrl,
+    email: emailUrl
 }
 
 const logoColors = {

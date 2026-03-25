@@ -2,11 +2,16 @@ import { useEffect, useState } from "react"
 import { ProjectCard } from "../components/ProjectCard"
 import { ProjectButton } from "@/components/ProjectButton"
 import { checkUserIsMobile } from "@/lib/checkUserIsMobile"
+import simplifiedSocialNetworkUrl from "/public/images/simplified-social-network.png"
+import simpleCityUrl from "/public/images/simple-city.png"
+import sfunitUrl from "/public/images/sfunit.png"
+import cmpt363Url from "/public/images/img1.jpg"
+import chip8Url from "/public/images/CHIP8-emulator.png"
 
 const projects = [
     {
         title: "Simplified Social Network",
-        image: "src/assets/simplified-social-network.png",
+        image: simplifiedSocialNetworkUrl,
         description: "A social network webapp allows users to connect with each other, make new friends, share moments through posts, and chat in real time.",
         tags: ["NodeJS", "MongoDB", "JavaScript", "CSS", "Docker", "NGIX"],
         demo: "https://github.com/shisata/Simplified-Social-Network",
@@ -15,7 +20,7 @@ const projects = [
     },
     {
         title: "SimpleCity",
-        image: "src/assets/simple-city.png",
+        image: simpleCityUrl,
         description: "Mobile app with admin management system. Consulted, designed and set up the project for the client.",
         tags: ["Prototype", "TypeScript", "React", "Redux", "PostgreSQL", "NodeJS"],
         demo: "https://bapxao.pythonanywhere.com/",
@@ -24,7 +29,7 @@ const projects = [
     },
     {
         title: "S.F.Unit",
-        image: "src/assets/sfunit.png",
+        image: sfunitUrl,
         description: "Real time multiplayer with stages and ending.",
         tags: ["NodeJS", "Socket.IO", "JavaScript", "SQLite"],
         demo: "https://github.com/shisata/sfunit-test",
@@ -33,7 +38,7 @@ const projects = [
     },
     {
         title: "CMPT363",
-        image: "src/assets/img1.jpg",
+        image: cmpt363Url,
         description: "lorem ipsoum ldkjsalkd jsakld jaslkj dlkas dlksaj",
         tags: ["NodeJs", "Javascript", "MongoDB", "React"],
         demo: "https://bapxao.pythonanywhere.com/",
@@ -42,7 +47,7 @@ const projects = [
     },
     {
         title: "CHIP8 Emulator",
-        image: "src/assets/CHIP8-emulator.png",
+        image: chip8Url,
         description: "Emulation of 2-bit game console with playable games.",
         tags: ["JavaScript", "Assembly"],
         demo: "https://adamnizol.github.io/CHIP-8-Emulator/",
