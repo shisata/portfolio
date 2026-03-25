@@ -16,7 +16,7 @@ export const TechStack = () => {
     ]
 
     return (
-        <div id="tech-stack-container" className="md:mt-[10rem] border-t pt-20 min-h-screen bg-neutral">
+        <div id="tech-stack-container" className="md:mt-[10rem] border-t-[0.75px] pt-20 min-h-screen bg-neutral">
             {/* <h2 id="tech-stack-title" className="flex font-heading-1 justify-center items-center">My expertise</h2> */}
             <h2 id="tech-stack-title" className={`rounded- flex font-heading-1 text-accent3 justify-center items-center`}>My Expertise</h2>
             <div id="tech-list-container" className="my-[10vh] flex-col place-items-center">

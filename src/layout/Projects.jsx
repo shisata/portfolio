@@ -4,7 +4,7 @@ import { ArrowUpRight } from 'lucide-react';
 
 export const Projects = () => {
     return (
-        <div id="projects-container" className="border-t mt-10 grid grid-cols-1">
+        <div id="projects-container" className="border-t-[0.75px] mt-10 grid grid-cols-1">
             <h2 id="projects-title" className="font-heading-2 pt-20">Projects</h2>
             <div name="projects-container" className="">
                 <ProjectCardList/>

@@ -25,13 +25,13 @@ export const Navbar = () => {
     return(
         <header id="navbar-container" className="fixed z-10 top-0 left-0 right-0 w-full h-navbar-height overflow-y-hidden"> 
             {/* <nav id="navbar-content" className={`container mx-auto px-50 flex items-center justify-between`} > */}
-            <nav id="navbar-content" className={`hidden md:flex items-center justify-between mx-auto px-20 border-2 ${isScrolled? `navbar-compact` : 'navbar-full'}`}>
-                <div id="navbar-logo-container" className="mr-auto">
-                    <NavLink to="/" end className="px-2 lg:px-10 py-navbar-height text-lg hover:text-highlight cursor-pointer"><Logo/></NavLink>
+            <nav id="navbar-content" className={`hidden md:flex items-center justify-between mx-auto px-20 ${isScrolled? `navbar-compact` : 'navbar-full'}`}>
+                <div id="navbar-logo-container" className="mr-auto cursor-pointer">
+                    <NavLink to="/" end className="px-2 lg:px-10 text-lg hover:text-highlight"><Logo/></NavLink>
                 </div>
-                <div id="navbar-buttons-container" className="ml-auto flex items-center">
+                <div id="navbar-buttons-container" className="ml-auto flex cursor-pointer">
                     {links.map((link, idx) => {
-                        return <NavLink to={link.to} key={idx} className="px-2 lg:px-10 py-navbar-height text-lg hover:text-highlight cursor-pointer">
+                        return <NavLink to={link.to} key={idx} className="px-2 lg:px-10 h-[80%] text-lg font-semibold hover:text-highlight">
                             {link.name}
                         </NavLink>
                     })}
