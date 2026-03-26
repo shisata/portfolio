@@ -33,7 +33,7 @@ export const Navbar = () => {
     const mobileMenuDisplay = `${isMobileMenuOpen ? `top-navbar-mobile-height` : `top-[-100vh]`}`
     const navbarSeperatorDisplay = `${isMobileMenuOpen ? `border-b-1 border-background-main` : ``}`
     return(
-        <header id="navbar-container" className="fixed z-1 top-0 left-0 right-0 w-full h-navbar-height"> 
+        <header id="navbar-container" className="fixed z-10 top-0 left-0 right-0 w-full h-navbar-height"> 
             {/* Desktop NavBar */}
             <nav id="navbar-desktop-container" className={`hidden md:flex md:justify-around h-full items-center mx-auto px-[2rem] transition-all duration-400 ${inactiveNavContainerHover}`}>
                 {/* Logo Container */}
@@ -62,7 +62,7 @@ export const Navbar = () => {
                 </div>
             </nav>
             {/* Mobile */}
-            <nav id="navbar-mobile-container" className={`z-20 md:hidden flex justify-between h-navbar-mobile-height items-center bg-text-default text-background-main relative ${navbarSeperatorDisplay} transition-all duration-200`}>
+            <nav id="navbar-mobile-container" className={`z-9 md:hidden flex justify-between h-navbar-mobile-height items-center bg-text-default text-background-main relative ${navbarSeperatorDisplay} transition-all duration-200`}>
                 {/* Logo Container */}
                 <div id="navbar-logo-content" className={`flex items-center navbar-regular`}>
                     <NavLink to="/" end onClick={() => {setMobileMenuOpen(false)}}
@@ -78,7 +78,7 @@ export const Navbar = () => {
                 </div>
             </nav>
             {/* Mobile Full Menu */}
-            <div id="navbar-mobile-menu" className={`md:hidden z-1 bg-text-default absolute bottom-auto left-0 right-0 w-full h-[30vh] ${mobileMenuDisplay} transition-all duration-200 flex flex-col gap-[1rem] p-[1rem] underline text-xl font-medium text-background-main`}>
+            <div id="navbar-mobile-menu" className={`md:hidden z-10 bg-text-default absolute bottom-auto left-0 right-0 w-full h-[30vh] ${mobileMenuDisplay} transition-all duration-200 flex flex-col gap-[1rem] p-[1rem] underline text-xl font-medium text-background-main`}>
                 {links.map((link, idx) => {
                     return <NavLink to={link.to} key={idx} className={``} onClick={() => {setMobileMenuOpen(false)}}>
                         {link.name}

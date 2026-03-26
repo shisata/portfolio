@@ -14,9 +14,8 @@ function App() {
   const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
   const location = useLocation();
   useEffect(() => {
-    console.log('location ', location);
-    isDarkMode? console.log(`dark mode`) : console.log(`light mode`);
     window.scrollTo(top)
+    isDarkMode? console.log(`dark mode`) : console.log(`light mode`);
   }, [isDarkMode, location])
 
   return (
