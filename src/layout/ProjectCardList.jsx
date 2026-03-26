@@ -23,8 +23,8 @@ const projects = [
         image: simpleCityUrl,
         description: "Mobile app with admin management system. Consulted, designed and set up the project for the client.",
         tags: ["Prototype", "TypeScript", "React", "Redux", "PostgreSQL", "NodeJS"],
-        demo: "https://bapxao.pythonanywhere.com/",
-        github: "https://bapxao.pythonanywhere.com/",
+        demo: "",
+        github: "",
         span: "1",
     },
     {
