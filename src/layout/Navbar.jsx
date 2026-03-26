@@ -44,7 +44,7 @@ export const Navbar = () => {
                 </div>
 
                 {/* Nav Container */}
-                <div id="navbar-main-container" className={`cursor-pointer flex items-center ${glassDisplaySwitcher} ${isScrolled? `gap-1` : `gap-4`}`}>
+                <div id="navbar-main-container" className={`cursor-pointer flex items-center ${glassDisplaySwitcher} ${isScrolled? `gap-0` : `gap-[2rem]`}`}>
                     {links.map((link, idx) => {
                         return <NavLink to={link.to} key={idx} className={` px-[1rem] xl:px-[1.5rem] text-xl font-medium hover:text-highlight`}>
                             {link.name}
