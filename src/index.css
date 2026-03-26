@@ -44,7 +44,9 @@
   --color-accent3-muted: #CB4D03;
   --color-accent4: #42F5A5;
   --color-accent5: #06BAD5;
-
+  
+  --color-glass: color-mix(in srgb, var(--color-accent3-muted) 7%, transparent);
+  --color-glass-cta: color-mix(in srgb, var(--color-accent3) 40%, transparent);
 
   --color-logo-react: #60DCFB;
   --color-logo-redux: #764ABD;
@@ -128,14 +130,14 @@
     height: 60%;
     padding: 0 2rem;
     border-radius: 50px;
-    background-color: color-mix(in srgb, var(--color-accent3-muted) 7%, transparent);
+    background-color: var(--color-glass);
     color: var(--color-text-default);
     backdrop-filter: blur(0.5rem);
     transition: all 0.5s ease;
   }
 
   .navbar-glass#navbar-cta-container { 
-    background-color: color-mix(in srgb, var(--color-accent3) 40%, transparent);
+    background-color: var(--color-glass-cta);
   }
 
   /* Changes background of all glass containers when hover in navbar area*/

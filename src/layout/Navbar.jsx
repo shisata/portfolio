@@ -28,8 +28,8 @@ export const Navbar = () => {
         }
     })
     
-    const inactiveNavContainerHover = `${isScrolled ? `` : `bg-background-main hover:bg-text-default hover:text-background-main py-[1rem] group`}`
     const glassDisplaySwitcher = `${isScrolled ? `navbar-glass` : `navbar-regular`}`
+    const inactiveNavContainerHover = `${isScrolled ? `` : `bg-background-main hover:bg-text-default hover:text-background-main py-[1rem] group`}`
     const mobileMenuDisplay = `${isMobileMenuOpen ? `top-navbar-mobile-height` : `top-[-100vh]`}`
     const navbarSeperatorDisplay = `${isMobileMenuOpen ? `border-b-1 border-background-main` : ``}`
     return(
@@ -62,7 +62,7 @@ export const Navbar = () => {
                 </div>
             </nav>
             {/* Mobile */}
-            <nav id="navbar-mobile-container" className={`z-20 md:hidden flex justify-between h-navbar-mobile-height items-center bg-text-default relative ${navbarSeperatorDisplay}`}>
+            <nav id="navbar-mobile-container" className={`z-20 md:hidden flex justify-between h-navbar-mobile-height items-center bg-text-default text-background-main relative ${navbarSeperatorDisplay} transition-all duration-200`}>
                 {/* Logo Container */}
                 <div id="navbar-logo-content" className={`flex items-center navbar-regular`}>
                     <NavLink to="/" end onClick={() => {setMobileMenuOpen(false)}}
