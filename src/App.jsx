@@ -1,5 +1,5 @@
 import { Navbar } from "./layout/Navbar"
-import { Routes, Route } from "react-router"
+import { Routes, Route, useLocation } from "react-router"
 import { Home } from "./pages/Home/Home"
 import { About } from "./pages/About/About"
 import { Works } from "./pages/Works/Works"
@@ -12,10 +12,13 @@ import { useEffect, useState } from "react"
 
 function App() {
   const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const location = useLocation();
   useEffect(() => {
+    console.log('location ', location);
     isDarkMode? console.log(`dark mode`) : console.log(`light mode`);
     // console.log(`${isDarkMode? `dark` : `light`}`)
-  }, [isDarkMode])
+    window.scrollTo(top)
+  }, [isDarkMode, location])
 
   return (
     <>
