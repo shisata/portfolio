@@ -5,7 +5,7 @@ import { checkUserIsMobile } from "@/lib/checkUserIsMobile"
 import simplifiedSocialNetworkUrl from "/src/images/simplified-social-network.png"
 import simpleCityUrl from "/src/images/simple-city.png"
 import sfunitUrl from "/src/images/sfunit.png"
-import cmpt363Url from "/src/images/img1.jpg"
+import cmpt363Url from "/src/images/cmpt363.png"
 import chip8Url from "/src/images/CHIP8-emulator.png"
 
 const projects = [
@@ -37,12 +37,12 @@ const projects = [
         span: "1",
     },
     {
-        title: "CMPT363",
+        title: "Meeting Prototype",
         image: cmpt363Url,
-        description: "lorem ipsoum ldkjsalkd jsakld jaslkj dlkas dlksaj",
-        tags: ["NodeJs", "Javascript", "MongoDB", "React"],
-        demo: "https://bapxao.pythonanywhere.com/",
-        github: "https://bapxao.pythonanywhere.com/",
+        description: "Prototyping a classroom app for attending class live, scheduling courses and emailing.",
+        tags: ["Axure RP", "Wireframe"],
+        demo: "",
+        github: "",
         span: "1",
     },
     {
