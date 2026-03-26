@@ -16,7 +16,6 @@ function App() {
   useEffect(() => {
     console.log('location ', location);
     isDarkMode? console.log(`dark mode`) : console.log(`light mode`);
-    // console.log(`${isDarkMode? `dark` : `light`}`)
     window.scrollTo(top)
   }, [isDarkMode, location])
 

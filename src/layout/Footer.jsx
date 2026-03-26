@@ -11,7 +11,7 @@ export const Footer = () => {
                         className="text-accent3"> Josh Tran</a> 
                 </p>
                 {/* Logo slogan */}
-                <h1 name="footer-slogan" className="text-center text-7xl sm:text-8xl lg:text-9xl font-extrabold tracking-wide sm:tracking-[0.2em] xl:tracking-[0.3em]">JOSH TRAN</h1>
+                <h1 name="footer-slogan" className="text-center text-5xl tracking-normal sm:text-8xl lg:text-9xl font-extrabold sm:tracking-[0.1em] xl:tracking-[0.3em]">JOSH TRAN</h1>
             </div>
             <div name="contact-info-container" className="absolute top-0 bottom-auto left-0 right-0 w-full h-2/3 p-[1rem] flex flex-col items-center">
                 <div name="contact-container" className="">
