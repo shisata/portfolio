@@ -14,7 +14,7 @@ const projects = [
         image: simplifiedSocialNetworkUrl,
         description: "A social network webapp allows users to connect with each other, make new friends, share moments through posts, and chat in real time.",
         tags: ["NodeJS", "MongoDB", "JavaScript", "CSS", "Docker", "NGIX"],
-        demo: "https://github.com/shisata/Simplified-Social-Network",
+        demo: "https://simplified-social-network.vercel.app/",
         github: "https://github.com/shisata/Simplified-Social-Network",
         span: "2",
     },
