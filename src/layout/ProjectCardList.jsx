@@ -32,8 +32,8 @@ const projects = [
         image: sfunitUrl,
         description: "Real time multiplayer with stages and ending.",
         tags: ["NodeJS", "Socket.IO", "JavaScript", "SQLite"],
-        demo: "https://github.com/shisata/sfunit-test",
-        github: "https://github.com/shisata/sfunit-test",
+        demo: "https://sfunit-276.vercel.app/",
+        github: "hhttps://github.com/shisata/sfunit-276",
         span: "1",
     },
     {
