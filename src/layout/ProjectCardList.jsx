@@ -103,8 +103,8 @@ export const ProjectCardList = () => {
                             </div>
                             {/* Details section */}
                             <div name="details-grid-container" className="row-start-2 col-start-3 md:col-start-5 relative">
-                                <div className="absolute bottom-[1rem] right-[1rem] left-auto top-auto w-[5rem] h-[2rem] rounded-full bg-white hover:bg-amber-50 flex place-content-center invisible">
-                                    <a href="" className="font-medium text-sm text-background-main self-center">Details</a>
+                                <div className="absolute bottom-[1rem] right-[1rem] left-auto top-auto w-[5rem] h-[2rem] rounded-full bg-white hover:bg-text-default flex place-content-center">
+                                    <a href="/works" className="font-medium text-sm text-background-main self-center">Details&rarr;</a>
                                 </div>
                             </div>
                         </div>
