@@ -9,6 +9,7 @@ import { Footer } from "./layout/Footer"
 import { useEffect, useState } from "react"
 
 // Todo: implement light/dark mode
+// TODO: change NavLink -> Link (NavLink = SPA)index
 
 function App() {
   const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
