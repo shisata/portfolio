@@ -38,7 +38,7 @@ export const Navbar = () => {
             <nav id="navbar-desktop-container" className={`hidden md:flex md:justify-around h-full items-center mx-auto px-[2rem] transition-all duration-400 ${inactiveNavContainerHover}`}>
                 {/* Logo Container */}
                 <div id="navbar-logo-content" className={`cursor-pointer flex items-center ${glassDisplaySwitcher}`}>
-                    <NavLink to="/" end className={`text-2xl font-bold hover:text-highlight`}>
+                    <NavLink to="/" end className={`text-2xl font-extrabold hover:text-highlight`}>
                     &gt;JoshTran_
                     </NavLink>
                 </div>
@@ -46,7 +46,7 @@ export const Navbar = () => {
                 {/* Nav Container */}
                 <div id="navbar-main-container" className={`cursor-pointer flex items-center ${glassDisplaySwitcher} ${isScrolled? `gap-0` : `gap-[2rem]`}`}>
                     {links.map((link, idx) => {
-                        return <NavLink to={link.to} key={idx} className={` px-[1rem] xl:px-[1.5rem] text-xl font-medium hover:text-highlight`}>
+                        return <NavLink to={link.to} key={idx} className={` px-[1rem] xl:px-[1.5rem] text-2xl font-medium hover:text-highlight`}>
                             {link.name}
                         </NavLink>
                     })}
@@ -56,7 +56,7 @@ export const Navbar = () => {
                 <div id="navbar-cta-container" className={`cursor-pointer flex gap-x-1 items-center hover:text-highlight ${glassDisplaySwitcher} ${isScrolled ? `` : `text-accent3 group-hover:text-background-main`}`}>
                     <FileText/>
                     <a href={resumeLink} target="_blank" rel="noopener noreferrer"
-                    className={`text-xl font-medium`}>
+                    className={`text-2xl font-medium`}>
                     Resume
                     </a>
                 </div>

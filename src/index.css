@@ -45,7 +45,7 @@
   --color-accent4: #42F5A5;
   --color-accent5: #06BAD5;
   
-  --color-glass: color-mix(in srgb, var(--color-accent3-muted) 7%, transparent);
+  --color-glass: color-mix(in srgb, var(--color-text-muted) 7%, transparent);
   --color-glass-cta: color-mix(in srgb, var(--color-accent3) 40%, transparent);
 
   --color-logo-react: #60DCFB;
@@ -60,11 +60,9 @@
 
   --color-card1: #191917;
   --color-card-tag: #222623;
-  /* --color-card-dimming: color-mix(in srgb, var(--color-background-main) 90%, transparent); */
 
 
   --font-default: 'Space Grotesk' sans-serif;
-  /* --color-navbar-background: #02d1b2; */
 }
 
 @layer base {
@@ -89,32 +87,7 @@
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    /* padding-top: var(--spacing-navbar-height) */
   }
-
-  /* nav.active{
-    background-color: aqua;
-  }
-
-  # -buttons-container {
-    transform: scale(1) ;
-    border-radius: 80%;
-    transition: transform 0.2s ease, border-radius 1s ease;
-  }
-
-  @media screen and (max-width: 900px){
-    #navbar-buttons-container {
-      transform: scale(0.5); 
-      border-radius: 0%;
-    }
-  }
-
-  #logo{ 
-    font-family: 'Space Grotesk', sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }  */
 }
 
 @layer components{
@@ -132,6 +105,7 @@
     border-radius: 50px;
     background-color: var(--color-glass);
     color: var(--color-text-default);
+    -webkit-text-stroke: 0.03rem var(--color-background-lighter);
     backdrop-filter: blur(0.5rem);
     transition: all 0.5s ease;
   }
@@ -143,46 +117,9 @@
   /* Changes background of all glass containers when hover in navbar area*/
   #navbar-desktop-container:hover .navbar-glass{
     background-color: var(--color-text-default);
-    color: var(--color-background-lighter);
-  }
-
-  /* ///////Previous implementation of glass containers////// */
-  .navbar-full {
-    background-color: var(--color-background-main);
-    /* border-color: transparent; */
-    border-radius: 0px;
-    /* border-bottom: solid; */
-    margin-top: 0rem;
-    width: 100%;
-    height: 100%;
-    transition: all 0.5s ease;
-    /* border-bottom: 1px solid var(--color-text-default); */
-  }
-
-  .navbar-full:hover {
-    background-color: var(--color-text-default);
     color: var(--color-background-main);
   }
 
-  .navbar-compact {
-    background-color: var(--color-navbar-background);
-    /* border-color: white; */
-    border-radius: 50px; 
-    margin-top: 1rem;
-    width: 60%;
-    height: 70%;
-    background-color: color-mix(in srgb, var(--color-background-main) 60%, transparent);
-    color: var(--color-text-muted);
-    backdrop-filter: blur(0.5rem);
-    transition: all 0.5s ease;
-    /* border: 0.75px solid color-mix(in srgb, color var(--color-accent1) 50%, transparent) */
-  }
-
-  .navbar-compact:hover {
-    background-color: var(--color-text-default);
-    color: var(--color-background-lighter);
-  }
-  /* ////////////////////////////////////////// */
 
   .role-grid-container { 
     display: grid;
@@ -236,7 +173,6 @@
   .card-bg-behavior {
     background-size: cover;
     background-position: center;
-    /* background-color: color-mix(in srgb, black 50%, white 50%); */
     filter: grayscale(30%);
     transition: transform 0.5s ease; 
   }
