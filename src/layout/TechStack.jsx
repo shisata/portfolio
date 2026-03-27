@@ -18,7 +18,7 @@ export const TechStack = () => {
         {name: "Redux", logo: reduxUrl, highlight: "text-logo-redux border-l-[0.5rem] lg:border-l-[2rem]", position: "md:pl-[10vw]"},
         {name: "TypesScript", logo: typescriptUrl, highlight: "text-logo-typescript border-l-[0.5rem] lg:border-l-[2rem]", position: "md:pl-[5vw]"},
         {name: "JavaScript", logo: javascriptUrl, highlight: "text-logo-javascript border-l-[0.5rem] lg:border-l-[2rem]", position: "md:pl-[10vw]"},
-        {name: "Express", logo: express, highlight: "text-logo-express border-l-[0.5rem] lg:border-l-[2rem]", position: "md:pl-[30vw]"},
+        {name: "Express.js", logo: express, highlight: "text-logo-express border-l-[0.5rem] lg:border-l-[2rem]", position: "md:pl-[30vw]"},
         {name: "Node.js", logo: nodejsUrl, highlight: "text-logo-nodejs border-l-[0.5rem] lg:border-l-[2rem]", position: "md:pl-[25vw]"},
         {name: "Tailwind", logo: tailwindUrl, highlight: "text-logo-tailwind border-l-[0.5rem] lg:border-l-[2rem]", position: "md:pl-[10vw]"},
         {name: "PostgreSQL", logo: postgresqlUrl, highlight: "text-logo-postgresql border-l-[0.5rem] lg:border-l-[2rem]", position: "md:pr-[15vw]"},
