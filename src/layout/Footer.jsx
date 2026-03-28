@@ -27,6 +27,7 @@ export const Footer = () => {
                 <h1 name="footer-slogan" className="text-center text-5xl tracking-normal sm:text-8xl lg:text-9xl font-black sm:tracking-[0.1em] xl:tracking-[0.3em]">JOSH TRAN</h1>
             </div>
 
+            {/* Previous implememtation of footer logo */}
             {/* <div name="slogan-container" className="absolute left-0 right-0 bottom-[-1rem] sm:bottom-[-1.75rem] lg:bottom-[-2.25rem] text-nowrap">
                 <p name="disclaimer" className="text-center my-auto">
                     Made with ❤️ by 
