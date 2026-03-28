@@ -1,9 +1,9 @@
-# Josh Tran Portfolio🧍
+# Josh Tran Portfolio 🙋
 <img src="/src/images/screenshots/Hero.png" width="60%" />  
 
 ***   
 
-# About❓
+# About ❓
 Website to show info about me as a developer. There are sections still under updates. 
 
 ### Upcoming features (Edited: March 26, 2026)
@@ -34,20 +34,31 @@ This project is built using:
 *   [Tailwind CSS](https://tailwindcss.com)
 ***   
 
-# Screenshots📷
+# Screenshots 📷
 
 <img src="/src/images/screenshots/About-summary.png" width="80%" />   
 
+---
+
 <img src="/src/images/screenshots/Techstack.png" width="80%" />   
+
+---
 
 <img src="/src/images/screenshots/Projects.png" width="80%" />   
 
+---
+
 <img src="/src/images/screenshots/Footer.png" width="80%" />   
 
+---
+
 <img src="/src/images/screenshots/Construction.png" width="80%" />   
+
 
 ### Mobile
 ***  
 <img src="/src/images/screenshots/mobile/Hero.png" width="50%" />   
+
+---
 
 <img src="/src/images/screenshots/mobile/Navbar.png" width="50%" />   
