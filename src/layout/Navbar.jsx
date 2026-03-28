@@ -12,7 +12,7 @@ const links = [
     { name: "Contact",to: "/contact" },
 ]
 
-const resumeLink = `https://drive.google.com/file/d/1wZaDgBntmCO_Ib_hWDbmExiKQ6qeVeqS/view`
+const resumeLink = `https://drive.google.com/file/d/1mE5rIBnrGi2-vZW0_tQ_BFfV1QrByC4A/view`
 
 export const Navbar = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);

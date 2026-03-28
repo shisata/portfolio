@@ -1,7 +1,7 @@
 import { ProjectCardList } from "./ProjectCardList"
 import { Button } from "../components/Button"
-import { ArrowUpRight } from 'lucide-react';
-import { NavLink } from "react-router";
+import { ArrowUpRight } from 'lucide-react'
+import { NavLink } from "react-router"
 
 export const Projects = () => {
     return (
