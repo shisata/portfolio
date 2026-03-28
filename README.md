@@ -9,7 +9,6 @@ Website to show info about me as a developer. There are sections still under upd
 *   [ ] Theme switcher
 
 #### How to run
-
 1. Init project
 ```
 npm install
@@ -22,6 +21,8 @@ npm run dev
 ```
 npm run build && npm run start
 ```
+
+For deployment: Production files are located in __/dist__
 
 #### Tech Stack
 This project is built using:
