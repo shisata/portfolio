@@ -2,7 +2,8 @@ import { useEffect, useState } from "react"
 import { ProjectCard } from "../components/ProjectCard"
 import { ProjectButton } from "@/components/ProjectButton"
 import { checkUserIsMobile } from "@/lib/checkUserIsMobile"
-import simplifiedSocialNetworkUrl from "/src/images/simplified-social-network.png"
+// import simplifiedSocialNetworkUrl from "/src/images/simplified-social-network.png"
+import simpliNetUrl from "/src/images/SimpliNet.png"
 import simpleCityUrl from "/src/images/simple-city.png"
 import sfunitUrl from "/src/images/sfunit.png"
 import cmpt363Url from "/src/images/cmpt363.png"
@@ -10,12 +11,12 @@ import chip8Url from "/src/images/CHIP8-emulator.png"
 
 const projects = [
     {
-        title: "Simplified Social Network",
-        image: simplifiedSocialNetworkUrl,
+        title: "SimpliNet",
+        image: simpliNetUrl,
         description: "A social network webapp allows users to connect with each other, make new friends, share moments through posts, and chat in real time.",
-        tags: ["Node.js", "MongoDB", "JavaScript", "CSS", "Docker", "NGIX"],
-        demo: "https://simplified-social-network.vercel.app/",
-        github: "https://github.com/shisata/Simplified-Social-Network",
+        tags: ["React", "Node.js", "MongoDB", "JWT", "Tailwind", "JavaScript"],
+        demo: "https://simplified-social-network-v2.vercel.app/",
+        github: "https://github.com/shisata/simplified-social-network-v2",
         span: "2",
         butonVisible: true,
     },
